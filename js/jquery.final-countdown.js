@@ -23,6 +23,8 @@
 
     var element;
     var callbackFunction;
+    let primaryColor = '#2B92B1';
+    let borderWidth = '6';
 
     $.fn.final_countdown = function(options, callback) {
         element = $(this);        
@@ -42,20 +44,20 @@
                 canvas_days: 'canvas-days'
             },
             seconds: {
-                borderColor: '#7995D5',
-                borderWidth: '6'
+                borderColor: primaryColor,
+                borderWidth: borderWidth
             },
             minutes: {
-                borderColor: '#ACC742',
-                borderWidth: '6'
+                borderColor: primaryColor,
+                borderWidth: borderWidth
             },
             hours: {
-                borderColor: '#ECEFCB',
-                borderWidth: '6'
+                borderColor: primaryColor,
+                borderWidth: borderWidth
             },
             days: {
-                borderColor: '#FF9900',
-                borderWidth: '6'
+                borderColor: primaryColor,
+                borderWidth: borderWidth
             }
         }, options);
 

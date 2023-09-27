@@ -7,8 +7,8 @@
 
 /* For Main Circle countdown */
 $('.countdown').final_countdown({
-    'start': Date.now() / 1000,
-    'end': new Date().setUTCFullYear(2024, 6, 6) / 1000,
+    'start': new Date('Jan 01, 2022 00:00:00 UTC+0') / 1000,
+    'end': new Date('Oct 19, 2024 19:00:00 UTC+0') / 1000,
     'now': Date.now() / 1000,
 });
 /* ==============================================
@@ -24,63 +24,6 @@ $(function () {
 =====================================================================*/
 $(document).ready(function () {
     new WOW().init();
-
-    /* ==============================================
-        For Smooth Scroll.
-    =====================================================================*/
-    var $stupid = $('<div></div>')
-        .height(1)
-        .hide()
-        .appendTo('body');
-
-    var mobileHack = function () {
-        $stupid.show();
-        setTimeout(function () {
-            $stupid.hide();
-        }, 10);
-    };
-
-    $('ul.mainnav a').smoothScroll({
-        afterScroll: mobileHack
-    });
-
-
-
-    /* ==============================================
-        For Fixed Menu.
-    =====================================================================*/
-    var s = $("#stick_menu");
-    var pos = s.position();
-    $(window).scroll(function () {
-        var windowpos = $(window).scrollTop();
-        if (windowpos >= pos.top) {
-            s.addClass("stick_menu");
-        } else {
-            s.removeClass("stick_menu");
-        }
-    });
-
-    /* Small countdown */
-    var s2 = $(".countdown-small");
-    var pos2 = s2.position();
-    $(".countdown-small").hide();
-    $(window).scroll(function () {
-        var windowpos2 = $(window).scrollTop();
-
-        if (windowpos2 > pos2.top) {
-            $(".countdown-small").show(500);
-        } else {
-            $(".countdown-small").hide(600);
-        }
-    });
-
-    $(window).resize(function () {
-        if ($(window).width() < 980) {
-            //alert('Less than 980');
-            $(".countdown-small").hide();
-            $(".countdown-small").css("display", "none");
-        }
-    });
 
     /* ==============================================
         Remove Full Screen Image in Mobile view.
@@ -136,12 +79,4 @@ $(document).ready(function () {
             });
         };
     });
-
-    /* ==============================================
-        For Customize Scroll Bar Part.
-    =====================================================================*/
-
-    var nice = jQuery("html").niceScroll({ scrollspeed: 100, }).hide();;
-
-
 });    

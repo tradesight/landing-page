@@ -19,7 +19,7 @@ width:80%;
 }
 
 .clock-canvas {
-	background-color: rgba(255, 255, 255, .1);
+	background-color: rgba(255, 255, 255, .15);
 	border-radius: 50%;
 	height: 0px;
 	padding-bottom: 100%;
@@ -38,7 +38,7 @@ width:80%;
 }
 
 .text .val {
-	font-size: 50px;
+	font-size: 48px;
 }
 
 .text .type-time {
