@@ -1,14 +1,7 @@
 .countdown {
-margin-top:13%;
 width:80%;
 }
 .countdown-container {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	transform: translateY(-50%);
-
 }
 
 .clock-item .inner {
@@ -52,15 +45,9 @@ z-index:9999;
 	.clock-item {
 		margin-bottom: 30px;		
 	}
-	.countdown {
-	margin-top:46%;
-	}
 }
 @media only screen and (max-width: 767px) {
 	.clock-item {
 		margin: 0px 30px 30px 30px;
-	}
-	.countdown {
-	margin-top:140% !important;
 	}
 }
