@@ -228,8 +228,11 @@ ol {
     width: 100%;
     position: absolute;
     overflow: auto;    
+    display: flex;
 }
-
+.start_part {
+    margin: auto;
+}
 .site_logo {
     margin-top: 50px;
     text-align: center;
@@ -251,7 +254,7 @@ ol {
 }
 
 .header_part {
-    background: url("images/background.png") repeat scroll center center / cover rgba(0, 0, 0, 0);
+    background: url("../images/background.png") repeat scroll center center / cover rgba(0, 0, 0, 0);
     overflow: hidden;
     position: absolute;
     width: 100%;
