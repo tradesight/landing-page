@@ -1,0 +1,1 @@
+$(".countdown").final_countdown({start:new Date("Jan 01, 2022 00:00:00 UTC+0")/1e3,end:new Date("Oct 19, 2024 19:00:00 UTC+0")/1e3,now:Date.now()/1e3});$(function(){$('[data-rel="tooltip"]').tooltip()});

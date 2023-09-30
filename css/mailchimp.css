@@ -247,6 +247,8 @@
 
 #mc_embed_signup #mce-error-response {
     display: none;
+    color: #e85c41;
+    margin-bottom: -10px;
 }
 
 #mc_embed_signup #mce-success-response {
