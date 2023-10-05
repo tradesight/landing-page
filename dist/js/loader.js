@@ -1,1 +1,1 @@
-$("body").append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');$(window).on("load",function(){setTimeout(function(){$("#loadingDiv").fadeOut(500,function(){$("#loadingDiv").remove()});$("html, body").css({overflow:"auto"})},2e3)});
+$(window).on("load",(function(){setTimeout((function(){$("#loadingDiv").fadeOut(500,(function(){$("#loadingDiv").remove()})),$("html, body").css({overflow:"auto"})}),2e3)}));
