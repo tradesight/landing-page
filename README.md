@@ -1,2 +1,2 @@
-# web-app
-Web app at tradesight.app.
+# landing-page
+TradeSight App landing page.
