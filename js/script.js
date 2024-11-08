@@ -8,7 +8,7 @@
 /* For Main Circle countdown */
 $('.countdown').final_countdown({
     'start': new Date('Jan 01, 2022 00:00:00 UTC+0') / 1000,
-    'end': new Date('Oct 19, 2024 19:00:00 UTC+0') / 1000,
+    'end': new Date('June 30, 2025 00:00:00 UTC+0') / 1000,
     'now': Date.now() / 1000,
 });
 /* ==============================================
